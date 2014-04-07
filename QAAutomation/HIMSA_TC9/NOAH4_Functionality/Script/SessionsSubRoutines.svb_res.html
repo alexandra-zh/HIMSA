@@ -1,0 +1,53 @@
+<br><b>Name: </b> BuildGraph(Process,AreaName,GraphName) 	<br>
+<b>Purpose: </b> builds a graph in a specified graph field	<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       GraphName: mapped name of the graph field<br>
+       StepSize: 3 - the number  <br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> CaptureAudGraph() 	<br>
+<b>Purpose: </b> captures an image of audiogram graph in the Noah 4 main window	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> captured image <br>
+<br><br><b>Name: </b> GetDeviceInfo(InfoType, FullName)	<br>
+<b>Purpose: </b> identifies either model or manufacturer of the device from its full name	<br>
+<b>Inputs: </b> InfoType - either "Model" or "Manufacturer"<br>
+       FullName - full name of the devise from the Devices window      <br>
+<b>Return values: </b> model or manufacturer name as a string<br>
+<br><br><b>Name: </b> GetNoahVersion()	<br>
+<b>Purpose: </b> defines NOAH version from the About window	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> HOAH version, as a string value <br>
+<br><br><b>Name: </b> IsDeviceInfoAdded(Ear, Field,  Value)	<br>
+<b>Purpose: </b> verifies whether the device was added to the devices list	<br>
+<b>Inputs: </b> Field: the property of device that was specified in "Fit" module<br>
+              examples: "Model", "Serial"<br>
+       Ear: the ear, either "Right" or "Left"<br>
+       Value: the data that was entered in the corresponding field in the "Fit" module <br>
+<b>Return values: </b> boolean, True if device was found in the devices list, False otherwise <br>
+<br><br><b>Name: </b> IsSessionAdded(ModuleName) 	<br>
+<b>Purpose: </b> verifies whether the specified session was added to sessions list	<br>
+<b>Inputs: </b> ModuleName: module name, that should appear in the sessions list<br>
+<b>Return values: </b> boolean, True if session was added to the session list, False otherwise <br>
+<br><br><b>Name: </b> VerifySessionDate() 	<br>
+<b>Purpose: </b> verifies the date of the session  	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyModuleStartBySessionDblClick(ModuleName) 	<br>
+<b>Purpose: </b> verifies whether the specified session was added to sessions list	<br>
+<b>Inputs: </b> ModuleName: module name, that should appear in the sessions list<br>
+<b>Return values: </b> boolean, True if session was added to the session list, False otherwise <br>
+<br><br><b>Name: </b> CheckSessionFile(strDate, strFileName) 	<br>
+<b>Purpose: </b> Procedure for verification of lauching files or Journal Module from Session Browser <br>
+<b>Inputs: </b> strDate - date of entry with tested file<br>
+          strFileName - filename which should be lauched<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> GetListOfSessions() 	<br>
+<b>Purpose: </b> Function for retrieving the list of items in session list	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> array type, the list of major sessions in session list <br>
+<br><br><b>Name: </b> CheckSessionListSorting(arrSessions) 	<br>
+<b>Purpose: </b> Procedure for sorting verification in the session list	<br>
+<b>Inputs: </b> arrSessions - the array of major sessions in the session list<br>
+<b>Return values: </b> none<br>
+<br>

@@ -1,0 +1,153 @@
+<br><b>Name: </b> CheckBox(Process,AreaName,CheckBoxName,Value) 	<br>
+<b>Purpose: </b> checks or unchecks the specified checkbox <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       CBName: mapped name of the checkbox<br>
+       Value: state of checkbox to set - "Check" or "Uncheck" 	<br>
+<b>Return values: </b> None<br>
+<br><br><b>Name: </b> ClearField(Process,AreaName,TBName) 	<br>
+<b>Purpose: </b> clears the specified textbox <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       TBName: mapped name of the textbox 	<br>
+<b>Return values: </b> None<br>
+<br><br><b>Name: </b> ClickButton(Process,AreaName,ButtonName) 	<br>
+<b>Purpose: </b> performs mouse click on specified button<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       ButtonName: mapped name of the button 	<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> DblClickButton(Process,AreaName,ButtonName) 	<br>
+<b>Purpose: </b> performs mouse double click on specified button<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window/working area<br>
+       ButtonName: mapped name of the button 	<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> ExecuteQuery(QueryText)	<br>
+<b>Purpose: </b> executes specified SQL query and returns results in an array <br>
+<b>Inputs: </b> QueryText: SQL query string <br>
+<b>Return values: </b> array of results<br>
+<br><br><b>Name: </b> GetArea(Process,AreaName,Timeout) 	<br>
+<b>Purpose: </b> waits for the specified window and returns it as an object <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       Timeout: time to wait a window in seconds 	<br>
+<b>Return values: </b> Object<br>
+<br><br><b>Name: </b> GetAreaFull(Process,AreaName,Timeout) 	<br>
+<b>Purpose: </b> waits for the specified window and returns it as an object <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       Timeout: time to wait a window in seconds 	<br>
+<b>Return values: </b> Object<br>
+<br><br><b>Name: </b> GetAreaQuick(Process,AreaName,Timeout) 	<br>
+<b>Purpose: </b> waits for the specified window and returns it as an object <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+<b>Return values: </b> Object<br>
+<br><br><b>Name: </b> GetControl(Area,ControlName,Prefix) 	<br>
+<b>Purpose: </b> finds the specified control in specified window and returns it as object <br>
+<b>Inputs: </b> Area: mapped name of the window<br>
+       ControlName: mapped name of the control<br>
+       Prefix: prefix of the mapped name of the control, that specifies control type  	<br>
+<b>Return values: </b> Object<br>
+<br><br><b>Name: </b> GetControlQuick(Area,ControlName) 	<br>
+<b>Purpose: </b> inds the specified control in specified window and returns it as object <br>
+<b>Inputs: </b> Area: the window object<br>
+       ControlName: mapped name of the control<br>
+<b>Return values: </b> Object<br>
+<br><br><b>Name: </b> GetRegistryValue(Root,Path,KeyName) 	<br>
+<b>Purpose: </b> returns the value of specified registry key, or "null" if no value or key was found<br>
+<b>Inputs: </b> Root: registry root folder  <br>
+       Path: full registry path <br>
+       KeyName: name of the key which value should be returned 	<br>
+<b>Return values: </b> the found value, or "null" string<br>
+<br><br><b>Name: </b> IsToggleButtonChecked(Process,AreaName,ControlName)	<br>
+<b>Purpose: </b> verifies whether the specified toggle button toggled<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       ControlName: mapped name of the button	<br>
+<b>Return values: </b> Boolean, "True" if specified control exists, "False" otherwise<br>
+<br><br><b>Name: </b> IsControlExists(Process,AreaName,ControlName)	<br>
+<b>Purpose: </b> verifies whether the specified control exists or not<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       ControlName: mapped name of the control 	<br>
+<b>Return values: </b> Boolean, "True" if specified button is toggled, "False" otherwise<br>
+<br><br><b>Name: </b> IsControlVisible(Process,AreaName,ControlName) 	<br>
+<b>Purpose: </b> verifies whether the specified control visible or not<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       ControlName: mapped name of the control 	<br>
+<b>Return values: </b> Boolean, "True" if specified control is visible, "False" otherwise<br>
+<br><br><b>Name: </b> IsRegistryKeyExists(Root,Path,KeyName) 	<br>
+<b>Purpose: </b> identifies whether the specified registry key exists<br>
+<b>Inputs: </b> Root: registry root folder<br>
+       Path: full registry path<br>
+       KeyName: name of the key which existence should be identified 	<br>
+<b>Return values: </b> Boolean, "True" if key was found, "False" otherwise<br>
+<br><br><b>Name: </b> SelectComboBoxItem(Process,AreaName,CBName,Value) 	<br>
+<b>Purpose: </b> selects the specified value from the specified combobox <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       CBName: mapped name of the combobox<br>
+       Value: value to select 	<br>
+<b>Return values: </b> None<br>
+<br><br><b>Name: </b> SelectRButton(Process,AreaName,ButtonName) 	<br>
+<b>Purpose: </b> selects specified radio button<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       ButtonName: mapped name of the radio button 	<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SetField(Process,AreaName,TBName,Value) 	<br>
+<b>Purpose: </b> enters the text to the specified textbox <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+       TBName: mapped name of the textbox<br>
+       Value: text to enter 	<br>
+<b>Return values: </b> None<br>
+<br><br><b>Name: </b> SetFieldQuick(Control,Value) 	<br>
+<b>Purpose: </b> enters the text to the specified textbox <br>
+<b>Inputs: </b> Control: the textbox object to enter the text into<br>
+       Value: text to enter 	<br>
+<b>Return values: </b> None<br>
+<br><br><b>Name: </b> VerifyField(Process,AreaName,FieldName,Value) 	<br>
+<b>Purpose: </b> Verifies the text of the specified field <br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the area<br>
+       FieldName: mapped name of the field<br>
+       Value: text to verify 	<br>
+<b>Return values: </b> boolean, "True" if text was verified, "False" otherwise<br>
+<br><br><b>Name: </b> VerifyRegistryEntry(Root,Path,KeyName,ValueExpected) 	<br>
+<b>Purpose: </b> verifies whether specified registry key has the expected value<br>
+<b>Inputs: </b> Root: registry root folder<br>
+       Path: full registry path<br>
+       KeyName: name of the key which value should be verified<br>
+       ValueExpected: expected value of the registry key  	<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> WindowClose(Process,AreaName) 	<br>
+<b>Purpose: </b> closes specified window<br>
+<b>Inputs: </b> Process: name of the process(global variable, set in "Main" script unit)<br>
+       AreaName: mapped name of the window<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> GetPatientData() 	<br>
+<b>Purpose: </b> Get patient data from driver file (Excel table)<br>
+<b>Inputs: </b> none <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> InitialyzeManufacturerData() 	<br>
+<b>Purpose: </b> Get manufacturer data from driver file (Excel table)<br>
+<b>Inputs: </b> none <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> StartModule(strModule) 	<br>
+<b>Purpose: </b> Start module by appropriate module button click on the Module Toolbar<br>
+<b>Inputs: </b> strModule - string, module name which should be started<br>
+          Available variable: NOAHaud 3, NOAHfit 3, Journal Module, Journal (for 3.6.1 JM version)  <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> LanguageInit(LanguagePack) 	<br>
+<b>Purpose: </b> Language initialization procedure for set locale depended parameters<br>
+<b>Inputs: </b> LanguagePack - project variable for tested language of NOAH4  <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> Translate() 	<br>
+<b>Purpose: </b> Procedure for set translated values for using project variabled<br>
+<b>Inputs: </b> none  <br>
+<b>Return values: </b> none<br>
+<br>

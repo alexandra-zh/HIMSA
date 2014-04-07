@@ -1,0 +1,144 @@
+<br><b>Name: </b> AddPatient(FirstName,LastName) 	<br>
+<b>Purpose: </b> adds a patient to the patient list, filling only the FirstName and LastName fields<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> AddPatientFull(FirstName, Lastname, MiddleName, DateOfBirth, Gender, City, Comments, Address1, PatientGuid, PatientID,_'  PatientNo, ActivePatient, Salutation, Title, Address2, Address3, Province, ZipCode, Country, HomeTel, WorkTel, MobileTel,_'  EMail, SSNumber, Physician, Referral, Insurance1, Insurance2, CountryCode, LanguageCode) 	<br>
+<b>Purpose: </b> Adds specified patient to the patient list, filling all the fields <br>
+<b>Inputs: </b> FirstName, Lastname, MiddleName, DateOfBirth, Gender, City, Comments, Address1, PatientGuid, PatientID,_<br>
+ PatientNo, ActivePatient, Salutation, Title, Address2, Address3, Province, ZipCode, Country, HomeTel, WorkTel, MobileTel,_<br>
+ EMail, SSNumber, Physician, Referral, Insurance1, Insurance2, CountryCode, LanguageCode<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> AddPatientFull(drvPatient) 	<br>
+<b>Purpose: </b> Adds specified patient to the patient list, filling all the fields <br>
+<b>Inputs: </b> drvPatient - driver (excel table) with values for patient add form<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> CountPatientsWithName(NameString)	<br>
+<b>Purpose: </b> counts patients, whose first names start with specified string	<br>
+<b>Inputs: </b> NameString: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> integer value, the number of found patients<br>
+<br><br><b>Name: </b> DeletePatient(FirstName, LastName) 	<br>
+<b>Purpose: </b> deletes specified patient from a patient list	<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> PatientIndexInList(FirstName, LastName) 	<br>
+<b>Purpose: </b> verifies whether the specified patient exists in the patients list and returns its index<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> index of the specified patient, -1 if the patient wasn't found in the list, -2 if the list is empty <br>
+<br><br><b>Name: </b> SelectBirthDate(DateString)<br>
+<b>Purpose: </b> selects the specified date in calendar	<br>
+<b>Inputs: </b> DateString: date in format "M/D/YYYY"<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SelectPatient(FirstName, LastName) 	<br>
+<b>Purpose: </b> selects specified patient from a patient list (makes him/her active)	<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> VerifyColumnsCombination(FirstNameState,LastNameState,PatientNoState)<br>
+<b>Purpose: </b> verifies that specified columns have specified states	<br>
+<b>Inputs: </b> FirstNameState<br>
+       LastNameState<br>
+       PatientNoState<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> VerifyColumnSorting(PatientsListControl,ColumnName,Order)<br>
+<b>Purpose: </b> verifies that patients list may be sorted by specified column	<br>
+<b>Inputs: </b> PatientsListControl <br>
+       ColumnName<br>
+       Order<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyColumnState(ColumnName, ColumnExpectedState)<br>
+<b>Purpose: </b> verifies that specified column has the expected state (seen/hidden)	<br>
+<b>Inputs: </b> ColumnName<br>
+       ColumnExpectedState<br>
+<b>Return values: </b> boolean, True if column has the expected state, False otherwise <br>
+<br><br><b>Name: </b> VerifyComments(Comments)	<br>
+<b>Purpose: </b> verifies that specified text is shown in Comments window	<br>
+<b>Inputs: </b> Comments - text to verify<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> VerifyContactInfo(FirstName, LastName)	<br>
+<b>Purpose: </b> verifies that specified patient's name is shown in Contact Info area	<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyEditPatientForm(FirstName, Lastname, MiddleName, DateOfBirth, Phone, Email, Gender, Address1, PostalCode, State, City, Comments)	<br>
+<b>Purpose: </b> verifies that the data entered during the patient creation is saved<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+       ...<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyPatientBanner(FirstName, LastName)	<br>
+<b>Purpose: </b> verifies that specified patient's name is shown in Patient Banner bar	<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyBannerData(FirstName, LastName, BirthDate, Gender, SSN)	<br>
+<b>Purpose: </b> verifies that specified patient's data is shown in Patient Banner bar	<br>
+<b>Inputs: </b> FirstName - first name of the patient<br>
+         LastName - last name of the patient<br>
+         BirthDate - birthdate of the patient<br>
+         Gender - gender of the patient<br>
+         SSN - Social Security Number of the patient<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyEditFormComments(Comments)	<br>
+<b>Purpose: </b> verifies that specified text is shown in Comments field of the "Add patient" window	<br>
+<b>Inputs: </b> Comments - text to verify<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> VerifyFoundPatients(StringToSearch)	<br>
+<b>Purpose: </b> verifies that all/only patients with first name starting from the specified string remained in the patients list<br>
+<b>Inputs: </b> StringToSearch:<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyStatusBar(FirstName, LastName)<br>
+<b>Purpose: </b> verifies that specified patient's name is shown in status bar	<br>
+<b>Inputs: </b> FirstName: first name of the patient<br>
+       LastName: last name of the patient<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> VerifyStatusBarFull(strUser, strServer, strFirstName, strLastName)<br>
+<b>Purpose: </b> verifies that specified patient's name, user and server is shown in status bar	<br>
+<b>Inputs: </b> strUser: user name from login in NOAH4<br>
+          strServer: server name (SQL server name) <br>
+          strFirstName: first name of the patient<br>
+          strLastName: last name of the patient<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> GoToPatientDataSetup() 	<br>
+<b>Purpose: </b> Procedure for navigation to Patient Data Setup	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> AllPatientFieldsSelection() 	<br>
+<b>Purpose: </b> Procedure for selecting a set of fields for new patient addition	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> PatientFieldsSelection(arrFields) 	<br>
+<b>Purpose: </b> Procedure for selecting a set of fields for new patient addition	<br>
+<b>Inputs: </b> arrFields - array of fields names or "ALL" parameter for all fields selection<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> AllPatientFieldActivation(bAll) 	<br>
+<b>Purpose: </b> Procedure for selecting a set of required fields for new patient addition	<br>
+<b>Inputs: </b> bAll - boolean flag. 1 - the disabled fields for Add Patient form (Patient no. and Created by) will selected<br>
+                            0 - disabled fields for Add Patient form will be excluded<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> PatientFieldActivation(arrFields) 	<br>
+<b>Purpose: </b> Procedure for selecting a set of required fields for new patient addition	<br>
+<b>Inputs: </b> arrFields - array of fields names<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> PatientFieldsOrder(strFieldName, iNumber) 	<br>
+<b>Purpose: </b> Procedure for set order value for target field for Add Patient form	<br>
+<b>Inputs: </b> strFieldName - string, caption of field from Patient Field Configuration settings form<br>
+          iNumber - integer, value of order number for target field<br>
+<b>Return values: </b> integer - value which was set for the field before <br>
+<br><br><b>Name: </b> CloseCurrentPatient() 	<br>
+<b>Purpose: </b> Procedure for closing current patient in the system	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> SetPatientFieldsConfig(arrFields) 	<br>
+<b>Purpose: </b> Procedure for selection a set of fields for columns customization of Patient List	<br>
+<b>Inputs: </b> arrFields - array of values (captions) which should be selected<br>
+          "ALL" - a possible value, in this case procedure select all available fields<br>
+<b>Return values: </b> none <br>
+<br><br><b>Name: </b> PMFakeColumnsSet() 	<br>
+<b>Purpose: </b> Procedure for selection a list of column names in columns customization	<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none <br>
+<br>

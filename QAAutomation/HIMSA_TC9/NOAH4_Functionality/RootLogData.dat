@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="item 0">
+			<Node name="children"/>
+			<Prp name="projectkey" type="S" value="{0B4BB920-14B6-47F8-A594-7C283EA91FE6}"/>
+			<Prp name="persistentdatakey" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+			<Prp name="test" type="S" value="{AF28E774-3121-45BE-8D31-D628F17BB45F}FuncSmokeTest"/>
+			<Prp name="moniker" type="S" value="{470718FF-7F7B-4464-B436-FA9B7FA62744}"/>
+			<Prp name="status" type="I" value="0"/>
+			<Prp name="name" type="S" value="Test Log [FunctionalitySmokeTest\FuncSmokeTest]"/>
+			<Prp name="ownermoniker" type="S" value=""/>
+			<Prp name="filename" type="S" value="D:\HIMSA\Source\HIMSA\NOAH4_Functionality\Log\10_23_2009_13_27_46_879\{470718FF-7F7B-4464-B436-FA9B7FA62744}"/>
+		</Node>
+	</Node>
+</Nodes>

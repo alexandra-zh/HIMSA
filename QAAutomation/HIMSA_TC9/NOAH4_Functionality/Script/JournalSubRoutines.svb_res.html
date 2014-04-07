@@ -1,0 +1,130 @@
+<br><b>Name: </b> CheckBannerData(drvPatient) 	<br>
+<b>Purpose: </b> Check patient data on Journal module banner field<br>
+<b>Inputs: </b> drvPatient - the excel table (driver) with Patient data<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> AddEntries(drvEntry) 	<br>
+<b>Purpose: </b> Fill all required fields for new entry and save this entry<br>
+<b>Inputs: </b> drvEntry - driver (excel table) with data of added entries<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> AddEntry(strDate, strSubj, strText) 	<br>
+<b>Purpose: </b> Fill all required fields for new entry and save this entry<br>
+<b>Inputs: </b> strDate - date of new entry<br>
+          strSubj - subject of new entry<br>
+          strText - text of new entry<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> EditEntry() 	<br>
+<b>Purpose: </b> Procedure for entry modifying<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SaveEntry() 	<br>
+<b>Purpose: </b> Try to save currect entry<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CancelEntry() 	<br>
+<b>Purpose: </b> Cancel save\update currect entry<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SelectEntry(strSubject) 	<br>
+<b>Purpose: </b> Procedure for entry selection in the list <br>
+<b>Inputs: </b> strSubject - the caption of subject for selection<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> DeleteEntry(strSubject) 	<br>
+<b>Purpose: </b> Procedure for entry removing from the entry list <br>
+<b>Inputs: </b> strSubject - the caption of subject for selection<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SelectOptions(bShow) 	<br>
+<b>Purpose: </b> Set options 'Can Edit Old Entries' and 'Show Archived Actions'<br>
+<b>Inputs: </b> bShow - boolean variable for 'Show Archived Actions' option<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CloseModule() 	<br>
+<b>Purpose: </b> Close active Journal Module<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckVerticalSplitter() 	<br>
+<b>Purpose: </b> Procedure for splitter verification and entries-list resize verification<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckWinResize() 	<br>
+<b>Purpose: </b> Procedure for windows resize functionality verification<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> OpenFileEx(strFileName) 	<br>
+<b>Purpose: </b> Method for attaching file to entry by file name<br>
+<b>Inputs: </b> strFileName - full path to file with file name<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SaveFileEx(strFilePath) 	<br>
+<b>Purpose: </b> Method for saving as... attached file<br>
+<b>Inputs: </b> strFilePath - full path and filename for saving<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> AttachFilesList(drvList) 	<br>
+<b>Purpose: </b> Method for attaching files list to current entry<br>
+<b>Inputs: </b> drvList - list of files for attaching to current entry<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> AttachFile(strPath) 	<br>
+<b>Purpose: </b> Method for attaching file to current entry<br>
+<b>Inputs: </b> strPath - path to the target file<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SelectFile(strFileName) 	<br>
+<b>Purpose: </b> Procedure for file name selecting in the filelist<br>
+<b>Inputs: </b> strFileName - name of file for selection in the list<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> RemoveFile(strFileName) 	<br>
+<b>Purpose: </b> Procedure for file removing from files list in the entry<br>
+<b>Inputs: </b> strFileName - name of file for selection in the list<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckFile(strFileName, bResult) 	<br>
+<b>Purpose: </b> Procedure for verification including\excluding file in the list<br>
+<b>Inputs: </b> strFileName - name of file for selection in the list<br>
+          bResult (True\False) - true = the file should be in the list<br>
+                                      - false = file should be absent in the list<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckFilePopupMenu() 	<br>
+<b>Purpose: </b> Procedure for popup menu of filelist verification<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckPopupMenuAction() 	<br>
+<b>Purpose: </b> Procedure for popup menu acions verification for selected file<br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckFileListSorting() 	<br>
+<b>Purpose: </b> Procedure for attached files sorting order verification <br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckEntrySorting() 	<br>
+<b>Purpose: </b> Procedure for entries list sorting verification for both columns <br>
+<b>Inputs: </b> none<br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckFilesSearch(strFind) 	<br>
+<b>Purpose: </b> Function for search verification by filenames <br>
+<b>Inputs: </b> strFind - string as search parameter<br>
+<b>Return values: </b> true\false<br>
+<br><br><b>Name: </b> CheckSubjSearch(strFind) 	<br>
+<b>Purpose: </b> Function for search verification by entry subject <br>
+<b>Inputs: </b> strFind - string as search parameter<br>
+<b>Return values: </b> true\false<br>
+<br><br><b>Name: </b> CheckSubjBodySearch(strFind) 	<br>
+<b>Purpose: </b> Function for search verification through entry's body <br>
+<b>Inputs: </b> strFind - string as search parameter<br>
+<b>Return values: </b> true\false<br>
+<br><br><b>Name: </b> CheckSearch(strFind, bAuto) 	<br>
+<b>Purpose: </b> Function for search verification <br>
+<b>Inputs: </b> strFind - string as search parameter<br>
+          bAuto - boolean variable (True\False), True = auto searching, False = manual searching <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> SearchReset() 	<br>
+<b>Purpose: </b> Function for search reseting <br>
+<b>Inputs: </b> none <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> EditorStylesVerification(strEntry)<br>
+<b>Purpose: </b> Procedure for entry body editor verification <br>
+<b>Inputs: </b> strEntry - entry name from entries list <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> Printing(EntryName)<br>
+<b>Purpose: </b> Procedure for run printing functionality for specific entry <br>
+<b>Inputs: </b> EntryName - Subject of entry which should be printed <br>
+<b>Return values: </b> none<br>
+<br><br><b>Name: </b> CheckPatientChange()<br>
+<b>Purpose: </b> Procedure for testing patient switch during any JM operations (WARNING! Previous tests data using!) <br>
+<b>Inputs: </b> none <br>
+<b>Return values: </b> none<br>
+<br>

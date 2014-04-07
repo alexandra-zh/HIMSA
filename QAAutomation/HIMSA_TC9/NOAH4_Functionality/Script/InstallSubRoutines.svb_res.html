@@ -1,0 +1,23 @@
+<br><b>Name: </b> InstallNETandReboot 	<br>
+<b>Purpose: </b> waits for the finish of .NET installation and reboots machine, if window that requests reboot would appear <br>
+<b>Inputs: </b> no<br>
+<b>Return values: </b> no<br>
+<br><br><b>Name: </b> VerifyInstallWindowText(Text,Timeout) 	<br>
+<b>Purpose: </b> waits for the InstallShield Wizard window with the specified text to appear for specified time <br>
+<b>Inputs: </b>  1. Text: the shortened text of the window<br>
+        Examples:<br>
+        Shortened text:   - Full text:<br>
+        "Welcome"         - "Welcome to the InstallShield Wizard for Noah 4"<br>
+        "Setup Type"      - "Setup Type"<br>
+        "License"         - "License Agreement"<br>
+        "Ready"           - "Ready to Install the Program"<br>
+        "ReadyRep"        - "Ready to Repair the Program"<br>
+        "ReadyRem"        - "Remove the Program"<br>
+        "Maintenance"     - "Program Maintenance"<br>
+        "Completed"       - "InstallShield Wizard Completed"<br>
+        "FinishSuccess"   - "The InstallShield Wizard has successfully installed Noah 4. Click Finish to exit the wizard."<br>
+        "FinishFailure"   - "The wizard was interrupted before Noah 4 could be completely installed."<br>
+'<br>
+        2. Timeout: time in seconds to wait the InstallShield Wizard window with the specified text<br>
+<b>Return values: </b> Boolean value, "True" if window with the corresponding full text would appear, "False" otherwise<br>
+<br>
